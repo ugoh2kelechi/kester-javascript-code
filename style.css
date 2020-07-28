@@ -1,3 +1,102 @@
-h1, h2 {
-  font-family: Lato;
+/**
+* Template Stylesheet : This stylesheet gives the html file look and feel
+* Colors used : #808080 , #1788c5,#fafafa, #f3f3f3, #9b9898, #1788c5, #ef358b, #6db38a
+* Font family : sans-serif
+*/
+
+/** Default body style */
+body {
+	font-family: sans-serif;
+	color:#808080;
+}
+/** Style for table */
+table {
+	caption-side: bottom;
+	width: 500px;
+	border: 6px solid #1788c5;
+	margin: 100px auto;
+	border-collapse: collapse;
+
+}
+/** table header padding and font size */
+table th {
+	padding: 20px;
+	font-size: 20px;
+}
+/** left table header style */
+th#left {
+	background-color:#fafafa;
+  font-weight: normal;
+	text-align: left;
+}
+/** right table header syle */
+th#right {
+	background:#f3f3f3;
+	border-left: 2px solid #fff;
+  font-weight: normal;
+	text-align: right;
+}
+
+/** border added for each table row */
+table tr {
+	border-bottom: 2px solid #ebe8e8;
+	height: 80px;
+}
+/** padding for each cell */
+table td {
+	padding: 0 20px;
+}
+/** styles for left cells of table */
+table td.left {
+	color:#1788c5;
+	font-weight: bold;
+  font-size: 25px;
+}
+/** table caption style */
+caption {
+  margin-top: -65px;
+  font-size: 25px;
+  font-weight: normal;
+  color: #1788c5;
+	text-align: center;
+}
+/** table caption link color and style */
+caption a {
+	color: #1788c5;
+	text-decoration: none;
+}
+/** sub heading color of table header */
+.grey-sub {
+	color:#9b9898;
+}
+/** default color for border and other fonts */
+.blue {
+	color:#1788c5;
+}
+/** right table cell styles */
+td.right {
+	text-align: right;
+	font-weight: bold;
+	font-size: 24px;
+}
+/** left table cell style */
+td.left {
+	text-align: left;
+}
+/** sub heading color for negative numbers */
+.red {
+	color:#ef358b;
+}
+/** sub heading colors for positive numbers */
+.green {
+	color:#6db38a;
+}
+/** styles for sub heading in table right cells */
+p.sub {
+	margin-top: 1px;
+  font-size: 18px;
+}
+/** adjust margin-right space to caret icon */
+span.caret {
+  margin-right: 10px;
 }

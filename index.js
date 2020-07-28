@@ -4,6 +4,28 @@ import './style.css';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `
+ <h3>Part 1 – HTML/CSS </h3>
+  <p> Construct this UI using HTML and CSS, matching the visual design as closely as possible. </p>
+  <!--COMMENT: table to represent our data -->
+	<table class='table'>
+	  <!--COMMENT: table head containing heading title of data -->
+	<thead>
+	<th id='left'>Account</th><th id='right'> <span class='caret blue'>&#94;</span> Available Cash<br/><span class='grey-sub'>Today's Change</span></th>
+	</thead>
+	  <!--COMMENT: table body contains all data left and right table cells and rows -->
+	<tbody>
+	<tr><td class='left'>IRA - 5200</td><td class='right'>$5,763.36<p class='sub red'>-0.08% / $8,916.69</p></td></tr>
+	<tr><td class='left'>AAA - 1812</td><td class='right'>$20,10,926.10<p class='sub green'>+0.21% / $38,881.63</p></td></tr>
+	<tr><td class='left'>AAA - 3810</td><td class='right'>$10,50,054.07<p class='sub green'>+0.07% / $8,916.69</p></td></tr>
+	<tr><td></td><td></td></tr>
+	</tbody>
+	  <!--COMMENT: end of table body -->
+	  <!--COMMENT: table caption -->
+	<caption><a href='#'>Load more</a></caption>
+	  <!--COMMENT: end of table caption -->
+	</table>
+	  <!--COMMENT: end of table -->
+
  <h3> Part 2 - JavaScript </h3>
   <p> This is a separate JavaScript coding exercise with no UI interaction.
   <br/><br/>   1.  Given values for acctData and balances below, write a function that returns only an array of account numbers, and accepts the following optional parameters:<br/><br/>  - user <br/> - sortBy (accepts "acctNum" or "balance")<br/> - sortDirection (accepts "asc" or "desc"; default to asc)<br/><br/> 2.  Execute your function and output the results as an array in console log for the following scenarios:<br/><br/>  a) filtered by Bob<br/>  b) filtered by Charlie<br/> c) sorted by acctNum<br/> d) filtered by Alice; sorted by balance ascending </p>
