@@ -130,7 +130,8 @@ let getAccountNumbers = (filterByUser, sortBy='', sortDirection='') => {
     return fa.acctNum;  // i will return output of account numbers in array
   });
 };
-
+// clear console
+console.clear();
 // a) filtered by Bob
 console.log('Result 1 when Filter by Bob: ', getAccountNumbers('Bob'));
 
