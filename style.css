@@ -12,11 +12,11 @@ body {
 /** Style for table */
 table {
 	caption-side: bottom;
-	width: 500px;
+  /** making the table responsive */
+	width: 50%;
 	border: 6px solid #1788c5;
 	margin: 100px auto;
 	border-collapse: collapse;
-
 }
 /** table header padding and font size */
 table th {
@@ -99,4 +99,53 @@ p.sub {
 /** adjust margin-right space to caret icon */
 span.caret {
   margin-right: 10px;
+}
+
+/* 
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media screen and (max-width: 760px) {
+  table {
+    caption-side: bottom;
+    /** making the table responsive */
+    width: 50%;
+    border: 4px solid #1788c5;
+    margin: 100px auto;
+    border-collapse: collapse;
+  }
+
+  /** table header padding and font size */
+  table th {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  /** table caption style */
+  caption {
+    margin-top: -65px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #1788c5;
+    text-align: center;
+  }
+
+  /** styles for left cells of table */
+  table td.left {
+    color:#1788c5;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  
+  /** styles for right cells of table */
+  td.right {
+    text-align: right;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  /** left table cell style */
+  td.left {
+    text-align: left;
+  }
+
 }

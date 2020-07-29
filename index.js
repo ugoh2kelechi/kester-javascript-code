@@ -4,8 +4,8 @@ import './style.css';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `
- <h3>Part 1 – HTML/CSS </h3>
-  <p> Construct this UI using HTML and CSS, matching the visual design as closely as possible. </p>
+  <!--COMMENT: a div that represent my container element -->
+<div style="overflow-x:auto;">
   <!--COMMENT: table to represent our data -->
 	<table class='table'>
 	  <!--COMMENT: table head containing heading title of data -->
@@ -25,11 +25,9 @@ appDiv.innerHTML = `
 	  <!--COMMENT: end of table caption -->
 	</table>
 	  <!--COMMENT: end of table -->
+</div>
 
- <h3> Part 2 - JavaScript </h3>
-  <p> This is a separate JavaScript coding exercise with no UI interaction.
-  <br/><br/>   1.  Given values for acctData and balances below, write a function that returns only an array of account numbers, and accepts the following optional parameters:<br/><br/>  - user <br/> - sortBy (accepts "acctNum" or "balance")<br/> - sortDirection (accepts "asc" or "desc"; default to asc)<br/><br/> 2.  Execute your function and output the results as an array in console log for the following scenarios:<br/><br/>  a) filtered by Bob<br/>  b) filtered by Charlie<br/> c) sorted by acctNum<br/> d) filtered by Alice; sorted by balance ascending </p>
-  <h5> Open console to see results. </h5>
+  <h5> Open console to see JAVASCRIPT SOLUTION results. </h5>
   <h6> Note: Data in given questions were missing, so I have assumed data to solve the question. </h6>
 `;
 
